@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% include 'nav.html'%}
+
+{% block title %} Vinyl Island {% endblock %}
+
+
+
+{% block body %}
+
+<div class="container-md">
+    <div class="row">
+        <div class="col md-12">
+
+            <div class="jumbotron p-3">
+
+                <h2>Your Vinyl Island <strong>Collection  </strong>  <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#mymodal">Add to Collection</button></h2>
+                <br>
+
+                <!-- Flash Message -->
+                {% with messages = get_flashed_messages() %}
+
+                {% if messages %}
+
+                {% for message in messages %}
+
+                <div class="alert alert-success alert-dismissable" role="alert">
+ 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+
+                {{message}}
+
+                </div>
+
+                {% endfor %}
+
+                {% endif %}
+                {% endwith %}
+
+                <!-- End Flash Message -->
+                
+
+                <!-- Start table to display items in Collection -->
+                <div class="table-responsive">
+                    <table class="table table-hover table-light">
+
+        <tr class="table-secondary">
+            <th>ID</th>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Label</th>
+            <th>Format</th>
+            <th>Year</th>
+            <th>Condition</th>
+            <th></th>
+        </tr>
+
+        {% for row in collection %}
+
+        <tr>
+            <th>{{row.id}}</th>
+            <th>{{row.artist}}</th>
+            <th>{{row.title}}</th>
+            <th>{{row.label}}</th>
+            <th>{{row.format}}</th>
+            <th>{{row.year}}</th>
+            <th>{{row.condition}}</th>
+            <th>
+
+                <!-- Action buttons in table -->
+                <a href="/update/{{row.id}}"  class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modaledit{{row.id}}">Update</a> 
+                <a href="/delete/{{row.id}}"  class="btn btn-dark btn-sm float-right" onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
+
+            </th>
+        </tr>
+        <!-- End display items in Collection -->
+
+<!-- Modal Edit Item-->
+<div id="modaledit{{row.id}}" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+  
+       <div class="modal-content">
+  
+  
+          <div class="modal-header">
+  
+  
+             <h4 class="modal-title">Update This Item</h4>
+  
+  
+          </div>
+  
+  
+          <div class="modal-body">
+  
+  
+             <form action="{{url_for('update')}}" method="POST">
+  
+  
+                <div class="form-group">
+  
+  
+                   <label>Artist:</label>
+
+                    <input type="hidden"  name="id" value="{{row.id}}">
+  
+                    <input type="text" class="form-control" name="artist" value="{{row.artist}}">
+  
+  
+                </div>
+  
+  
+                <div class="form-group">
+  
+  
+                   <label>Title:</label>
+  
+                   <input type="text" class="form-control" name="title" value="{{row.title}}">
+  
+  
+                </div>
+  
+  
+                <div class="form-group">
+  
+  
+                   <label>Label:</label>
+  
+                   <input type="text" class="form-control" name="label" value="{{row.label}}">
+  
+  
+                </div>
+
+                <div class="form-group">
+  
+  
+                    <label>Format:</label>
+   
+                    <input type="text" class="form-control" name="format" value="{{row.format}}">
+   
+   
+                 </div>
+
+                 <div class="form-group">
+  
+  
+                    <label>Year:</label>
+   
+                    <input type="text" class="form-control" name="year" value="{{row.year}}">
+   
+   
+                 </div>
+
+            
+
+                    <div class="form-group">
+ 
+ 
+                   <label>Condition:</label>
+  
+                   <input type="text" class="form-control" name="condition" value="{{row.condition}}"><br>
+  
+                    </div>
+  
+  
+                    <div class="form-group">
+  
+  
+                   <button class="btn btn-dark" type="submit">Save changes</button>
+  
+  
+                </div>
+  
+  
+             </form>
+  
+  
+          </div>
+  
+  
+          <div class="modal-footer">
+  
+  
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+  
+          </div>
+        </div>
+    </div>
+</div>
+
+                    {% endfor %}
+ 
+ 
+            </table>
+
+
+            </div>
+            </div>
+
+
+
+  <!-- Modal Add Vinyl -->
+
+
+<div id="mymodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Add To Collection</h4>
+            </div>
+            <div class="modal-body">
+
+                <form action="{{url_for('insert')}}" method="POST">
+
+
+                    <div class="form-group">
+
+                        <label>Artist:</label>
+                        <input type="text" class="form-control" name="artist" required="1">
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        <label>Title:</label>
+                        <input type="text" class="form-control" name="title" required="1">
+
+
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        <label>Label:</label>
+                        <input type="text" class="form-control" name="label" required="1">
+
+
+                    </div>
+
+                    <div class="form-group">
+
+
+                        <label>Format:</label>
+                        <input type="text" class="form-control" name="format" required="1">
+                        
+                        
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        <label>Year:</label>
+                        <input type="text" class="form-control" name="year" required="1">
+                        
+                        
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        <label>Condition:</label>
+                        <input type="text" class="form-control" name="condition" required="1"><br>
+                        
+                        
+                    </div>
+
+
+
+                    <div class="form-group">
+
+
+                         <button class="btn btn-dark" type="submit">Add New Item</button>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+            <div class="modal-footer">
+
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+        </div>
+ 
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+ 
