@@ -5,7 +5,7 @@ pipeline {
         DATABASE_URI = credentials('DATABASE_URI')
     }
     stages {
-            stage('Setup'){
+            stage('Installing Packages'){
               // Comment Here
                 steps{
                 sh """sudo apt install python3-venv -y 
@@ -18,9 +18,21 @@ pipeline {
              stage('Build'){
               // Comment Here
                 steps{
+                      sh 'python --version'
                 }
             }
-            stage('Testing'){
+            stage('Static Code Checking') {
+            steps {
+                script {
+                    sh 'find . -name \\*.py | xargs pylint --load-plugins=pylint_django -f parseable | tee pylint.log'
+                    recordIssues(
+                        tool: pyLint(pattern: 'pylint.log'),
+                        failTotalHigh: 10,
+                    )
+                }
+              }
+            }
+            stage('Running Unit Tests'){
               // Comment Here
                 steps{
                 sh """ . ./venv/bin/activate
@@ -32,12 +44,14 @@ pipeline {
             }
             stage('Deploy'){
               // Comment Here
-                steps{   
+                steps{
+                  echo 'ready to deploy'
                 }
             }
             stage('Post Build'){
               // Comment Here
-                steps{   
+                steps{
+                  echo 'post build actions'
                 }
             }
         }
