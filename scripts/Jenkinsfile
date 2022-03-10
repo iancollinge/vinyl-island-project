@@ -48,13 +48,13 @@ pipeline {
             stage('Deploy'){
               // Comment Here
                 steps{
-                  echo 'ready to deploy'
+                  echo = 'ready to deploy'
                 }
             }
             stage('Post Build'){
               // Comment Here
                 steps{
-                  echo 'post build actions'
+                  echo = 'post build actions'
                 }
             }
         }
