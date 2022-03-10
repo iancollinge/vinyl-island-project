@@ -1,9 +1,10 @@
 pipeline {
     agent any
     environment {
-        
+        SECRET_KEY = credentials('SECRET_KEY')
+        DATABASE_URI = credentials('DATABASE_URI')
     }
-        stages{
+    stages {
             stage('Setup'){
               // Comment Here
                 steps{
@@ -12,6 +13,12 @@ pipeline {
                 . ./venv/bin/activate
                 pip3 install -r requirements.txt
                 """
+                }
+            }
+             stage('Build'){
+              // Comment Here
+                steps{
+                sh   
                 }
             }
             stage('Testing'){
@@ -24,22 +31,16 @@ pipeline {
                 rm -rf /venv"""    
                 }
             }
-            stage('Build'){
+            stage('Deploy'){
               // Comment Here
                 steps{
-                    
+                sh    
                 }
             }
             stage('Post Build'){
               // Comment Here
                 steps{
-                    
-                }
-            }
-            stage('Notify'){
-              // Comment Here
-                steps{
-                    
+                sh    
                 }
             }
         }
