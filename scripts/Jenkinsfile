@@ -1,17 +1,22 @@
 pipeline {
     agent any
     environment {
+      // Setup the environment and credentials
         JOB_NAME = ('Vinyl Island App')
         BUILD_NUMBER = ('1.0.0')
         BUILD_URL = ('')
-        SECRET_KEY = ('SECRET_KEY')
+        SECRET_KEY = ('')
         DATABASE_URI = ('DATABASE_URI')
     }
     stages {
             stage('Installing Packages'){
-              // Comment Here
+              // Steps to install venv and requirements
                 steps{
-                sh """sudo apt install python3.8-venv -S
+                // 1. Install venv
+                // 2. Create a venv directory
+                // 3. Activate the venv
+                // 4. Install the requirements
+                sh """sudo apt install python3 -venv
                 python3 -m venv venv
                 . ./venv/bin/activate
                 pip3 install -r requirements.txt
