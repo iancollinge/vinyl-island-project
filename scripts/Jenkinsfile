@@ -16,7 +16,7 @@ pipeline {
                 // 2. Create a venv directory
                 // 3. Activate the venv
                 // 4. Install the requirements
-                sh """sudo apt install python3 -venv
+                sh """sudo apt install python3 -venv -y
                 python3 -m venv venv
                 . ./venv/bin/activate
                 pip3 install -r requirements.txt
