@@ -1,0 +1,9 @@
+version:
+services:
+  frontend:
+    build:
+    image:
+    container_name:
+    ports:
+    - target: 5000
+      published: 80
