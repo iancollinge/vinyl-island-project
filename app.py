@@ -1,6 +1,9 @@
 import os
 from flask import Flask, redirect, render_template, request, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import Form
+from wtforms import StringField
+from wtforms.validators import DataRequired
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "shhh it's a secret"
@@ -12,7 +15,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 # End SqlAlchemy
-
 
 # Creating model table for our CRUD database
 
@@ -98,6 +100,18 @@ def delete(id):
  
     return redirect(url_for('index'))
 
+# This route is for the contact page and form
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+# This class is for the contact form
+
+
+# This setsup the sendmail service for our contact form
+
+
 
 # These are routes for supplementary pages
 
@@ -105,9 +119,13 @@ def delete(id):
 def about():
     return render_template ('about.html')
 
-@app.route('/contact')
-def contact():
-    return render_template ('contact.html')
+@app.route('/resources')
+def resources():
+    return render_template ('resources.html')
+
+@app.route('/gallery')
+def gallery():
+    return render_template ('gallery.html')
 
 @app.route('/help')
 def help():
