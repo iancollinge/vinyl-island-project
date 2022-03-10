@@ -11,7 +11,7 @@ pipeline {
             stage('Installing Packages'){
               // Comment Here
                 steps{
-                sh """sudo apt install python3-venv -y 
+                sh """sudo apt install python3.8-venv
                 python3 -m venv venv
                 . ./venv/bin/activate
                 pip3 install -r requirements.txt
