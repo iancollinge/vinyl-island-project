@@ -4,8 +4,8 @@ pipeline {
         JOB_NAME = ('Vinyl Island App')
         BUILD_NUMBER = ('1.0.0')
         BUILD_URL = ('')
-        SECRET_KEY = credentials('SECRET_KEY')
-        DATABASE_URI = credentials('DATABASE_URI')
+        SECRET_KEY = ('SECRET_KEY')
+        DATABASE_URI = ('DATABASE_URI')
     }
     stages {
             stage('Installing Packages'){
