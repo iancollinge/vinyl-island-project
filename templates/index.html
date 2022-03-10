@@ -10,12 +10,14 @@
 
 <div class="container-md">
     <div class="row">
-        <div class="col md-12">
+        <div class="col md-10">
 
             <div class="jumbotron p-3">
 
-                <h2>Your Vinyl Island <strong>Collection  </strong>  <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#mymodal">Add to Collection</button></h2>
+                <h2>Your <strong>Collection  </strong>  <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#mymodal">Add to Collection</button></h2>
                 <br>
+                <p class=>Start building your collection by <a href="" class="link" data-toggle="modal" data-target="#mymodal">adding an item.</a> </p>
+                <p>You can also update existing items in your collection using the action buttons on the right. <strong>Happy collecting!</strong></p><br>
 
                 <!-- Flash Message -->
                 {% with messages = get_flashed_messages() %}
@@ -43,38 +45,37 @@
                 
 
                 <!-- Start table to display items in Collection -->
-                <div class="table-responsive">
-                    <table class="table table-hover table-light">
-
-        <tr class="table-secondary">
-            <th>ID</th>
-            <th>Artist</th>
-            <th>Title</th>
-            <th>Label</th>
-            <th>Format</th>
-            <th>Year</th>
-            <th>Condition</th>
-            <th></th>
-        </tr>
-
+                <div class="table-responsive{-sm|-md|-lg|-xl}">
+                    <table class="table table-sm table-hover table-light table-bordered">
+                        <thead>
+                        <tr class="table-secondary">
+                            <th>ID</th>
+                            <th>Artist</th>
+                            <th>Title</th>
+                            <th>Label</th>
+                            <th>Format</th>
+                            <th>Year</th>
+                            <th>Condition</th>
+                            <th></th>
+                        </tr>
+                        </thead>
         {% for row in collection %}
+                        <tbody>
+                        <tr>
+                            <th>{{row.id}}</th>
+                            <th>{{row.artist}}</th>
+                            <th>{{row.title}}</th>
+                            <th>{{row.label}}</th>
+                            <th>{{row.format}}</th>
+                            <th>{{row.year}}</th>
+                            <th>{{row.condition}}</th>
+                            <th>
+                                <!-- Action buttons in table -->
+                                <a href="/update/{{row.id}}" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modaledit{{row.id}}">Edit</a> 
+                                <a href="/delete/{{row.id}}" class="btn btn-dark btn-sm float-right" onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
+                            </th>
+                        </tr>
 
-        <tr>
-            <th>{{row.id}}</th>
-            <th>{{row.artist}}</th>
-            <th>{{row.title}}</th>
-            <th>{{row.label}}</th>
-            <th>{{row.format}}</th>
-            <th>{{row.year}}</th>
-            <th>{{row.condition}}</th>
-            <th>
-
-                <!-- Action buttons in table -->
-                <a href="/update/{{row.id}}"  class="btn btn-dark btn-sm" data-toggle="modal" data-target="#modaledit{{row.id}}">Update</a> 
-                <a href="/delete/{{row.id}}"  class="btn btn-dark btn-sm float-right" onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
-
-            </th>
-        </tr>
         <!-- End display items in Collection -->
 
 <!-- Modal Edit Item-->
@@ -194,7 +195,7 @@
 
                     {% endfor %}
  
- 
+                </tbody>
             </table>
 
 
@@ -317,9 +318,9 @@
 
 </div>
 
-<div class="container-md">
+
 {% include 'footer.html'%}
+
 </div>
 
 {% endblock %}
- 
