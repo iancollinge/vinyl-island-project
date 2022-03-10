@@ -1,5 +1,68 @@
 .alert-success {
-    color: #030303;
-    background-color: #aac6ce;
-    border-color: #c3d1e6;
-  }
+  color: #030303;
+  background-color: #aac6ce;
+  border-color: #c3d1e6;
+}
+.table
+{
+  word-wrap: break-word;
+  word-break: break-all;  
+  white-space: normal !important;
+}
+.table th {
+  font-weight: 400;
+  font-family:var(--bs-font-sans-serif);
+  text-align: left;
+  letter-spacing: normal;
+  font-size: .8em;
+}
+btn {
+  margin-right:2px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+  background-color: #0b0d17;
+  padding-top: 60px;
+  font-weight:200;
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+/*
+ * Cover
+ */
+ .cover {
+  padding: 0 1.5rem;
+ }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #0b0d17;
+  font-size:smaller;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #101322a5;
+  background-clip: padding-box;
+  border: 1px solid rgba(249, 245, 245, 0.2);
+  border-radius: .3rem;
+  outline: 0;
+}
