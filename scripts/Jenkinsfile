@@ -18,7 +18,6 @@ pipeline {
              stage('Build'){
               // Comment Here
                 steps{
-                sh   
                 }
             }
             stage('Testing'){
@@ -33,14 +32,12 @@ pipeline {
             }
             stage('Deploy'){
               // Comment Here
-                steps{
-                sh    
+                steps{   
                 }
             }
             stage('Post Build'){
               // Comment Here
-                steps{
-                sh    
+                steps{   
                 }
             }
         }
