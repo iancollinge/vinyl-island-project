@@ -41,6 +41,7 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'docker-compose push'
+                      sh 'docker login -u “myusername” -p “mypassword” docker.io'
                 }
             }
 
