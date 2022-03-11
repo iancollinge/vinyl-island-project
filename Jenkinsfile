@@ -40,8 +40,7 @@ pipeline {
             stage('Push'){
               // Comment Here
                 steps{
-                      sh 'docker-compose push'
-                      sh 'docker login -u “iancollinge” -p “JKbas18ja”'
+                      sh 'docker push iancollinge'
                 }
             }
 
