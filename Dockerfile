@@ -1,6 +1,6 @@
-FROM python:3.10
-WORKDIR /app
+FROM python:3.5
+RUN apt-get update && apt-get install -y python3-pip
 COPY . .
-RUN pip install -r requirements.txt
+RUN pip3 install flask
 EXPOSE 5000
-ENTRYPOINT ["python3", "app.py"]
+ENTRYPOINT ["/usr/local/bin/python3", "app.py"]
