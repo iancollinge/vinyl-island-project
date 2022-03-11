@@ -29,7 +29,7 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
-                      sh 'newgrp docker'
+                      //sh 'newgrp docker'
                       sh 'docker run hello-world'
                       sh 'docker run --help'
                       sh 'docker-compose --version'
