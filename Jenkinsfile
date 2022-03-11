@@ -35,9 +35,16 @@ pipeline {
                       sh 'docker-compose --version'
                       sh 'docker-compose up -d'
                       //sh 'docker-compose up -d --scale nginx=3'
-                      sh 'docker-compose push'
                 }
             }
+            stage('Push'){
+              // Comment Here
+                steps{
+                      sh 'docker-compose push'
+                        image: iancollinge/vinylislandproject-nginx-1  // goes to your repository on Docker Hub
+                }
+            }
+
             // stage('Running Unit Tests'){
               // Comment Here
                //  steps{
