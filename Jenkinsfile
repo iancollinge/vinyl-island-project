@@ -29,10 +29,10 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
-                      sh 'docker-compose --version'
-                      sh 'docker-compose up -d'
-                      sh 'docker-compose up -d --scale nginx=3'
-                      sh 'docker-compose push'
+                      sh 'sudo docker-compose --version'
+                      sh 'sudo docker-compose up -d'
+                      sh 'sudo docker-compose up -d --scale nginx=3'
+                      sh 'sudo docker-compose push'
                 }
             }
             // stage('Running Unit Tests'){
