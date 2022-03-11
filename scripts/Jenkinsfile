@@ -31,27 +31,27 @@ pipeline {
                       sh 'python3 --version'
                 }
             }
-            stage('Static Code Checking') {
-            steps {
-                script {
-                    sh 'find . -name \\*.py | xargs pylint --load-plugins=pylint_django -f parseable | tee pylint.log'
-                    recordIssues(
-                        tool: pyLint(pattern: 'pylint.log'),
-                        failTotalHigh: 10,
-                    )
-                }
-              }
-            }
-            stage('Running Unit Tests'){
+            //stage('Static Code Checking') {
+            //steps {
+               //script {
+                    //sh 'find . -name \\*.py | xargs pylint --load-plugins=pylint_django -f parseable | tee pylint.log'
+                    //recordIssues(
+                        //tool: pyLint(pattern: 'pylint.log'),
+                        //failTotalHigh: 10,
+                    //)
+                //}
+             // }
+            //}
+            //stage('Running Unit Tests'){
               // Comment Here
-                steps{
-                sh """ . ./venv/bin/activate
-                python3 -m pytest --junitxml unittests.xml
-                python3 -m pytest --cov-report xml:coverage.xml --cov=tests/
-                deactivate
-                rm -rf /venv"""    
-                }
-            }
+                //steps{
+               // sh """ . ./venv/bin/activate
+               // python3 -m pytest --junitxml unittests.xml
+                //python3 -m pytest --cov-report xml:coverage.xml --cov=tests/
+               // deactivate
+               // rm -rf /venv"""    
+               // }
+           // }
             stage('Deploy'){
               // Comment Here
                 steps{
