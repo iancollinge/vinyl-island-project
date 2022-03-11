@@ -17,7 +17,7 @@ pipeline {
                 // 3. Activate the venv
                 // 4. Install the requirements
                     sh "python3 --version"
-                    sh "sudo apt-get -y install python3-pip"
+                    sh "python3 get-pip.py"
                     sh "pip3 --version"
                     sh "python3 -m pip3 install virtualenv"
                     sh "python3 -m venv venv"
