@@ -9,8 +9,8 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-    - target: 80
-      published: 80
+    - target: 3008
+      published: 3008
       protocol: tcp
     volumes:
     - type: bind
