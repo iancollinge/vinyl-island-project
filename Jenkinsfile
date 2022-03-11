@@ -34,7 +34,7 @@ pipeline {
                       sh 'docker run --help'
                       sh 'docker-compose --version'
                       sh 'docker-compose up -d'
-                      sh 'docker-compose up -d --scale nginx=3'
+                      //sh 'docker-compose up -d --scale nginx=3'
                       sh 'docker-compose push'
                 }
             }
