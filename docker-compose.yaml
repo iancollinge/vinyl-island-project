@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   frontend:
-    build:
+    build: .
     image: nginx:alpine
     container_name: vinylisland
     ports:
