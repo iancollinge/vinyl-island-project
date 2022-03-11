@@ -1,12 +1,11 @@
 version: "3.8"
 services:
-    app:
-    container_name: vinylisland
-    build: .
-    image: nginx:alpine
-    ports:
+  app:
+  container_name: vinylisland
+  build: .
+  image: nginx:alpine
+  ports:
     - target: 5000
-      published: 80
-      published: 5000
-      protocol: tcp
-      
+    - published: 80
+    - published: 5000
+  protocol: tcp
