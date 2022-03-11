@@ -1,5 +1,3 @@
-from web_app.tests.test_app import TestBase
-
 def test_empty_validation(self):
         self.submit_input('')
         self.assertIn(url_for('index'), self.driver.current_url)
