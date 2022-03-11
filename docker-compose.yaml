@@ -9,7 +9,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-    - target: 5000
+    - target: 80
       published: 80
       protocol: tcp
     volumes:
