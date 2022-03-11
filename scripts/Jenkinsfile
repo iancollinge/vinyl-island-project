@@ -17,6 +17,7 @@ pipeline {
                 // 3. Activate the venv
                 // 4. Install the requirements
                     sh "python3 --version"
+                    sh "wget https://bootstrap.pypa.io/get-pip.py"
                     sh "python3 get-pip.py"
                     sh "pip3 --version"
                     sh "python3 -m pip3 install virtualenv"
