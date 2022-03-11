@@ -3,12 +3,12 @@ pipeline{
         stages{
             stage('Make Directory'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test"
+                    sh "sh "sudo apt install python3 -venv -y""
                 }
             }
             stage('Make Files'){
                 steps{
-                    sh "touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2"
+                        echo "job done"
                 }
             }
         }
