@@ -41,8 +41,6 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'docker-compose push'
-                        image: iancollinge/vinylislandproject-nginx-1
-                    // goes to your repository on Docker Hub
                 }
             }
 
