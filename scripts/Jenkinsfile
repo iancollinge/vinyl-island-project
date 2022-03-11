@@ -29,7 +29,7 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
-                      sh 'docker-compose up -d --build'
+                      sh 'sudo docker-compose up -d --build'
                 }
             }
             // stage('Running Unit Tests'){
