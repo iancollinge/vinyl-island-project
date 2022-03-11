@@ -31,7 +31,7 @@ pipeline {
                       sh 'python3 --version'
                       sh 'newgrp docker'
                       sh 'docker run hello-world'
-                      sh "docker run --help'
+                      sh 'docker run --help'
                       sh 'docker-compose --version'
                       sh 'docker-compose up -d'
                       sh 'docker-compose up -d --scale nginx=3'
