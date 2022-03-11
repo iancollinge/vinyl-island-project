@@ -28,7 +28,7 @@ pipeline {
              stage('Build'){
               // Comment Here
                 steps{
-                      sh 'python --version'
+                      sh 'python3 --version'
                 }
             }
             stage('Static Code Checking') {
