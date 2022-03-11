@@ -29,7 +29,9 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
-                      sh 'sudo docker-compose up -d --build'
+                      sh 'docker-compose --version'
+                      sh 'docker-compose up -d'
+                      sh 'docker-compose up -d --scale nginx=3'
                 }
             }
             // stage('Running Unit Tests'){
