@@ -20,7 +20,7 @@ pipeline {
                     sh "wget https://bootstrap.pypa.io/get-pip.py"
                     sh "python3 get-pip.py"
                     sh "python3 -m pip install virtualenv"
-                    sh "python3 -m venv venv"
+                    sh "python3 -m virtualenv venv"
                     sh ". ./venv/bin/activate"
                     sh "pip install -r requirements.txt"
                 }
