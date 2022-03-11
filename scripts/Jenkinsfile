@@ -19,7 +19,6 @@ pipeline {
                     sh "python3 --version"
                     sh "wget https://bootstrap.pypa.io/get-pip.py"
                     sh "python3 get-pip.py"
-                    sh "pip --version"
                     sh "python3 -m pip install virtualenv"
                     sh "python3 -m venv venv"
                     sh ". ./venv/bin/activate"
