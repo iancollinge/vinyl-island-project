@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Make Directory'){
                 steps{
-                    sh "sudo apt install python3 -venv -y"
+                    echo "job done"
                 }
             }
             stage('Make Files'){
