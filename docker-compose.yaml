@@ -3,7 +3,7 @@ services:
   frontend:
     build:
     image: nginx:alpine
-    container_name:
+    container_name: vinylisland
     ports:
     - target: 5000
       published: 80
