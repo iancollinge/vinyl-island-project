@@ -1,9 +1,10 @@
-version:
+version: "3.8"
 services:
   frontend:
     build:
-    image:
+    image: nginx:alpine
     container_name:
     ports:
     - target: 5000
       published: 80
+      protocal: tcp
