@@ -40,7 +40,7 @@ pipeline {
             stage('Push'){
               // Comment Here
                 steps{
-                      sh 'docker push iancollinge'
+                      sh 'docker push iancollinge vinylislandproject-nginx-1'
                 }
             }
 
