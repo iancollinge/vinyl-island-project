@@ -17,6 +17,7 @@ pipeline {
                 // 3. Activate the venv
                 // 4. Install the requirements
                     sh "python3 --version"
+                    sh "python3 -m install virtualenv"
                     sh "python3 -m venv venv"
                     sh ". ./venv/bin/activate"
                     sh "pip3 install -r requirements.txt"
