@@ -5,5 +5,5 @@ def test_empty_validation(self):
         text = self.driver.find_element_by_xpath('<XPath>').text
         self.assertIn("The name field can't be empty!", text)
 
-        entries = Games.query.all()
+        entries = Data.query.all()
         self.assertEqual(len(entries), 0) # database should be empty
