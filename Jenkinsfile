@@ -30,7 +30,6 @@ pipeline {
                 steps{
                       sh 'python3 --version'
                       sh 'docker-compose --version'
-                      sh 'groupadd docker'
                       sh 'gpasswd -a jenkins docker'
                       sh 'docker-compose up -d'
                       sh 'docker-compose up -d --scale nginx=3'
