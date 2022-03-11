@@ -31,16 +31,16 @@ pipeline {
                       sh 'python3 --version'
                 }
             }
-            stage('Running Unit Tests'){
+            // stage('Running Unit Tests'){
               // Comment Here
-                steps{
-                    sh ". ./venv/bin/activate"
-                    sh "python3 -m pytest --junitxml unittests.xml"
-                    sh "python3 -m pytest --cov-report xml:coverage.xml --cov=tests/"
-                    sh "deactivate"
-                    sh "rm -rf /venv"   
-                    }
-                }
+               //  steps{
+                   //  sh ". ./venv/bin/activate"
+                    // sh "python3 -m pytest --junitxml unittests.xml"
+                   //  sh "python3 -m pytest --cov-report xml:coverage.xml --cov=tests/"
+                   //  sh "deactivate"
+                   //  sh "rm -rf /venv"   
+                   //  }
+               //  }
             stage('Deploy'){
               // Comment Here
                 steps{
