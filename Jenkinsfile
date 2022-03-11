@@ -29,8 +29,8 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
+                      sh 'docker run hello-world'
                       sh 'docker-compose --version'
-                      sh 'gpasswd -a jenkins docker'
                       sh 'docker-compose up -d'
                       sh 'docker-compose up -d --scale nginx=3'
                       sh 'docker-compose push'
