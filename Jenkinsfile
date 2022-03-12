@@ -7,7 +7,6 @@ pipeline {
         BUILD_URL = ''
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
-        DOCKER_LOGIN = credentials('DOCKER_LOGIN')
     }
     stages {
             stage('Installing Packages'){
