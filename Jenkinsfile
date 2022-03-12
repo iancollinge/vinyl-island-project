@@ -60,13 +60,14 @@ pipeline {
                 steps{
 		sshagent(credentials: ['sshKeyVIserver'], ignoreMissing: true) {
                   // some block
-                 }
                       sh 'scp docker-compose.yml ian@10.0.0.21:'
                       sh 'ssh -o StrictHostKeyChecking=no ian@10.0.0.21'
                       sh 'docker deploy --compose-file docker-compose.yml app'
                       sh 'exit'
+		   }
                 }
             }
+		    
             stage('Post Build Actions') {
 		// One or more steps need to be included within the steps block.
   		steps {
