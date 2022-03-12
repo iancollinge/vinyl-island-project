@@ -60,7 +60,7 @@ pipeline {
                 steps{
 		sshagent(['sshKeyVIserver'])
                       sh 'scp docker-compose.yml ian@10.0.0.21:'
-                      sh 'ssh -tt ian@10.0.0.21'
+                      sh 'ssh -o StrictHostKeyChecking=no ian@10.0.0.21'
                       sh 'docker deploy --compose-file docker-compose.yml app'
                       sh 'exit'
                 }
