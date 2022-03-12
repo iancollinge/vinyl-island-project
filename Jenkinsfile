@@ -60,7 +60,7 @@ pipeline {
                 steps{
                   // some block
                       sh 'scp docker-compose.yml ian@10.0.0.21:'
-                      sh 'ssh -tt -o StrictHostKeyChecking=no ian@10.0.0.21'
+                      sh 'ssh -i ~/.ssh/key.pem -o StrictHostKeyChecking=no ian@10.0.0.21'
                       sh 'docker deploy --compose-file docker-compose.yml app'
                       sh 'exit'
                 }
