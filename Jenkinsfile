@@ -58,8 +58,8 @@ pipeline {
             stage('Deploy'){
               // Comment Here
                 steps{
-                  sh 'scp docker-compose.yml ian@10.0.0.21:'
-                  sh 'ssh -tt ian@10.0.0.21 << ENDSSH'
+                  sh 'scp docker-compose.yml ian@127.0.0.1:'
+                  sh 'ssh -tt ian@127.0.0.1 << ENDSSH'
                   sh 'docker deploy --compose-file docker-compose.yml webapp'
                   sh 'exit'
                 }
