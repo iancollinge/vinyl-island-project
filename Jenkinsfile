@@ -61,7 +61,7 @@ pipeline {
                 steps{
                   // some block
                       sh 'scp docker-compose.yaml ian@10.0.0.21'
-                      sh 'ssh-add ~/.ssh/id_rsa -i ian@10.0.0.21 -p 22 docker deploy --compose-file docker-compose.yaml app'
+                      sh 'ssh ~/.ssh/id_rsa -i ian@10.0.0.21 -p 22 docker deploy --compose-file docker-compose.yaml app'
                 }
             }
 		    
