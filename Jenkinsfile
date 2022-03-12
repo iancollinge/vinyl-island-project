@@ -67,7 +67,7 @@ pipeline {
             }
             stage('Post Build'){
               // Comment Here
-                always {
+                steps{
 			      sh 'docker logout'
                 }
             }
