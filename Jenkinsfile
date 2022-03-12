@@ -58,7 +58,7 @@ pipeline {
                 steps{
                       sh 'scp docker-compose.yml ian@127.0.0.1:'
                       sh 'ssh -tt ian@127.0.0.1'
-                      sh 'docker deploy --compose-file docker-compose.yml webapp'
+                      sh 'docker deploy --compose-file docker-compose.yml app'
                       sh 'exit'
                 }
             }
