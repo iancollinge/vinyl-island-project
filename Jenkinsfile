@@ -61,7 +61,7 @@ pipeline {
                 steps{
                   // some block
                       sh 'scp docker-compose.yml ian@10.0.0.21'
-                      sh 'ian@10.0.0.21 docker deploy --compose-file docker-compose.yml app'
+                      sh 'ssh -tt ian@10.0.0.21 docker deploy --compose-file docker-compose.yml app'
                 }
             }
 		    
