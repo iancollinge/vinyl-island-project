@@ -58,17 +58,17 @@ pipeline {
             stage('Deploy'){
               // Comment Here
                 steps{
-                  sh 'scp docker-stack.yml bishal@10.0.1.5:'
-                  sh """ssh -tt bishal@10.0.1.5 << ENDSSH
-                    docker stack deploy --compose-file docker-stack.yml webapp
+                  sh 'scp docker-compose.yml ian@10.0.0.21:'
+                  sh 'ssh -tt ian@10.0.0.21 << ENDSSH
+                    docker deploy --compose-file docker-compose.yml webapp
                     exit
-                    ENDSSH"""
+                    ENDSSH'
                 }
             }
             stage('Post Build'){
               // Comment Here
-                steps{
-                  echo "post build actions"
+                always {
+			      sh 'docker logout'
                 }
             }
         }
