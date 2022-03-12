@@ -7,6 +7,7 @@ pipeline {
         BUILD_URL = ''
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
+	SECRET_KEY = credentials('sshKeyVIserver')
     }
     stages {
             stage('Installing Packages'){
@@ -60,7 +61,7 @@ pipeline {
                 steps{
                   // some block
                       sh 'scp docker-compose.yml ian@10.0.0.21:'
-                      sh 'ssh ian@10.0.0.21 -o StrictHostKeyChecking=no docker deploy --compose-file docker-compose.yml app'
+                      sh 'ssh ian@10.0.0.21  docker deploy --compose-file docker-compose.yml app'
                 }
             }
 		    
