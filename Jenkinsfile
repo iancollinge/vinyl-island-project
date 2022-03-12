@@ -40,7 +40,7 @@ pipeline {
             stage('Push'){
               // Comment Here
                 steps{
-                      sh 'echo $DOCKER_LOGIN_PSW | docker login -u $DOCKER_LOGIN_USR --password-stdin'
+                      sh 'echo $DOCKER_LOGIN_PSW | docker login -u $DOCKER_LOGIN_USR'
                       sh 'docker-compose push'
               }
             }
