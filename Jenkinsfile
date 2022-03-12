@@ -38,7 +38,7 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'docker login -u iancollinge -p JKbas18ja'
-		      sh 'docker-compose push iancollinge/app:latest'
+		      sh 'docker-compose push iancollinge/app'
               }
             }
 
