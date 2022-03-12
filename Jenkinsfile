@@ -40,8 +40,9 @@ pipeline {
             stage('Push'){
               // Comment Here
                 steps{
-                      sh 'docker push iancollinge vinylislandproject-nginx-1'
-                }
+                      sh 'echo $DOCKER_LOGIN_PSW | docker login -u $DOCKER_LOGIN_USR --password-stdin'
+                      sh 'docker-compose push'
+              }
             }
 
             // stage('Running Unit Tests'){
