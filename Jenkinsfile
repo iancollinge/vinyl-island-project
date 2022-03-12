@@ -59,16 +59,22 @@ pipeline {
               // Comment Here
                 steps{
                   sh 'scp docker-compose.yml ian@127.0.0.1:'
-                  sh 'ssh -tt ian@127.0.0.1 << ENDSSH'
+                  sh 'ssh -tt ian@127.0.0.1'
                   sh 'docker deploy --compose-file docker-compose.yml webapp'
                   sh 'exit'
                 }
             }
-            stage('Post Build'){
-              // Comment Here
-                steps{
-			      sh 'docker logout'
-                }
+            stage('') {
+  		steps {
+    		   // One or more steps need to be included within the steps block.
+  		}
+		  post {
+    		  always {
+			  sh 'docker logout'
+      		  // One or more steps need to be included within each condition's block.
+    		}
+  	      }
             }
+
         }
 }
