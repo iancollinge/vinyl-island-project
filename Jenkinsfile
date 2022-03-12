@@ -7,6 +7,7 @@ pipeline {
         BUILD_URL = ''
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
+        DOCKER_LOGIN = credentials('DOCKER_LOGIN')
     }
     stages {
             stage('Installing Packages'){
@@ -58,7 +59,11 @@ pipeline {
             stage('Deploy'){
               // Comment Here
                 steps{
-                  echo "ready to deploy"
+                  sh 'scp docker-stack.yml bishal@10.0.1.5:'
+                  sh """ssh -tt bishal@10.0.1.5 << ENDSSH
+                    docker stack deploy --compose-file docker-stack.yml webapp
+                    exit
+                    ENDSSH"""
                 }
             }
             stage('Post Build'){
