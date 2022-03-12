@@ -29,9 +29,6 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'python3 --version'
-                      //sh 'newgrp docker'
-                      sh 'docker run hello-world'
-                      sh 'docker run --help'
                       sh 'docker-compose --version'
                       sh 'docker-compose up -d'
                       //sh 'docker-compose up -d --scale nginx=3'
@@ -55,18 +52,20 @@ pipeline {
                    //  sh "rm -rf /venv"   
                    //  }
                //  }
-            stage('Deploy'){
+            
+	    stage('Deploy'){
               // Comment Here
                 steps{
-                  sh 'scp docker-compose.yml ian@127.0.0.1:'
-                  sh 'ssh -tt ian@127.0.0.1'
-                  sh 'docker deploy --compose-file docker-compose.yml webapp'
-                  sh 'exit'
+                      sh 'scp docker-compose.yml ian@127.0.0.1:'
+                      sh 'ssh -tt ian@127.0.0.1'
+                      sh 'docker deploy --compose-file docker-compose.yml webapp'
+                      sh 'exit'
                 }
             }
-            stage('') {
+            stage('Post Build Actions') {
+		// One or more steps need to be included within the steps block.
   		steps {
-    		   // One or more steps need to be included within the steps block.
+		     sh 'echo build completed'
   		}
 		  post {
     		  always {
