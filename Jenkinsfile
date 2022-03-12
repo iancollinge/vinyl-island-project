@@ -38,7 +38,7 @@ pipeline {
               // Comment Here
                 steps{
                       sh 'docker login -u iancollinge -p JKbas18ja'
-		      sh 'docker-compose push iancollinge/Vinyl Island App:1.0.0'
+		      sh 'docker-compose push iancollinge/vinyl-island-app:1.0.0'
               }
             }
 
