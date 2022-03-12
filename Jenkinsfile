@@ -35,9 +35,10 @@ pipeline {
                 }
             }
             stage('Push'){
+		withCredentials([string(credentialsId: 'c4c29728-20ac-4c4d-a67b-3f7cccc8c424', variable: 'dockerHubPWD')]) {
               // Comment Here
                 steps{
-                      sh 'docker login -u iancollinge -p JKbas18ja'
+		      sh "docker login -u iancollinge -p ${dockerHubPWD}"
 		      sh 'docker-compose push'
               }
             }
