@@ -62,7 +62,6 @@ pipeline {
                   sh 'ssh -tt ian@10.0.0.21 << ENDSSH'
                   sh 'docker deploy --compose-file docker-compose.yml webapp'
                   sh 'exit'
-                  sh 'ENDSSH'
                 }
             }
             stage('Post Build'){
