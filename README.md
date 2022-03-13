@@ -47,6 +47,8 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 * Jira
 
 ![](https://assets/home.jpg | width=240)
+
+<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
 ---
 ##### SOFTWARE DESIGN
 * Programming/software development
