@@ -40,7 +40,8 @@ pipeline {
              stage('Build'){
               // Comment Here
                 steps{
-                      sh 'python3 --version'
+                      sh 'sudo chmod 666 /var/run/docker.sock'
+		      sh 'python3 --version'
                       sh 'docker-compose --version'
                       sh 'docker-compose up -d'
                       //sh 'docker-compose up -d --scale nginx=3'
