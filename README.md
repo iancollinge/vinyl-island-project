@@ -46,7 +46,7 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 * Agile/Sprints
 * Jira
 
-![alt text](assets/home.jpg "Logo Title Text 1" alt="Screen recording CRUD functionality" width="240" height="180" border="10" />)
+![alt text](https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg alt="Screen recording CRUD functionality" width="240" height="180" border="10" />)
 ---
 ##### SOFTWARE DESIGN
 * Programming/software development
