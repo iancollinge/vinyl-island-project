@@ -46,8 +46,7 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 * Agile/Sprints
 * Jira
 
-![](https://assets/home.jpg | width=240)
-<img src="/assets/home.jpg..." data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="240" height="200" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="240" height="200" />
 
 ---
 ##### SOFTWARE DESIGN
