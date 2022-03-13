@@ -12,8 +12,8 @@ This project is the final submission for the QA DevOps bootcamp. The app is serv
 
 ### Contents:
 
-* [Introduction](## Introduction)
-* [Project Overview](##### PROJECT OVERVIEW)
+* [Introduction](#Introduction)
+* [Project Overview](#PROJECT OVERVIEW)
 * Quick Look
 * Screen Video Recordings
 * Project Management
