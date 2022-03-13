@@ -23,14 +23,13 @@ Final Project For QA DevOps Bootcamp
 * P12:
 * P13:
 
+----
+
 ##### THE PROJECT
 
-* UI/UX
-* 
+* GUI
 
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg
-" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg
-" width="500" height="" /><img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" width="500" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" /><img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" width="500" height="" />
 
 
 
