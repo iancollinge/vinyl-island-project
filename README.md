@@ -45,9 +45,6 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 ##### PROJECT MANAGEMENT
 * Agile/Sprints
 * Jira
-<a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
-" target="_blank"><img src="assets/vid1.png" 
-alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
 
 ##### SOFTWARE DESIGN
 * Programming/software development
