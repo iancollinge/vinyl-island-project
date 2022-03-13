@@ -61,14 +61,10 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 ---
 
 ##### PIPELINE
-* Release and Deployment
 * Manage VMs
 * Linux
-* Version Control
 * Git
-* Systems integration and build
 * Jenkins
-* Containers
 * Docker/Docker Compose
 * Docker Swarm
 ---
