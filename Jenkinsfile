@@ -26,6 +26,18 @@ pipeline {
                     sh "python3 -m pip install -r requirements.txt"
                 }
             }
+	    
+	    stage('Running Unit Tests'){
+              // Comment Here
+               steps{
+                     sh ". ./venv/bin/activate"
+                     sh "python3 -m pytest --junitxml unittests.xml"
+                     sh "python3 -m pytest --cov-report xml:coverage.xml --cov=tests/"
+                     sh "deactivate"
+                     sh "rm -rf /venv"   
+                   }
+              }
+	    
              stage('Build'){
               // Comment Here
                 steps{
@@ -44,17 +56,6 @@ pipeline {
 		}
               }
             }
-
-            stage('Running Unit Tests'){
-              // Comment Here
-               steps{
-                     sh ". ./venv/bin/activate"
-                     sh "python3 -m pytest --junitxml unittests.xml"
-                     sh "python3 -m pytest --cov-report xml:coverage.xml --cov=tests/"
-                     sh "deactivate"
-                     sh "rm -rf /venv"   
-                   }
-              }
             
 	    stage('Deploy'){
               // Comment Here
