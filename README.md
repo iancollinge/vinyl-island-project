@@ -46,10 +46,10 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 * Agile/Sprints
 * Jira
 
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" width="240" height="200" />
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" width="240" height="200" />
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" width="240" height="200" />
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" width="240" height="200" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" width="400" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" width="400" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" width="400" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" width="400" height="" />
 
 ---
 ##### SOFTWARE DESIGN
