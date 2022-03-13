@@ -45,6 +45,8 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 ##### PROJECT MANAGEMENT
 * Agile/Sprints
 * Jira
+
+![alt text](assets/home.jpg "Logo Title Text 1")
 ---
 ##### SOFTWARE DESIGN
 * Programming/software development
