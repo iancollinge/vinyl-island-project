@@ -5,7 +5,7 @@ Final Project For QA DevOps Bootcamp
 
 ## Introduction
 
-This project is the final submission for the QA DevOps bootcamp. The app is served through a CI/CD pipeline to the end user. Microsoft Azure VMs were used to maintain the pipeline. The following sections of this document will go through the development stages of the app and the pipeline.
+This project is the final submission for the QA DevOps bootcamp. The app is served through a CI/CD pipeline to the end user. Microsoft Azure VMs were used to maintain the pipeline. These sections document each of the stages and processes completed.
 
 ---
 
@@ -76,8 +76,7 @@ Each user story was assigned a story point estimate and then assigned to an epic
 
 ##### SOFTWARE DESIGN
 
-The app was deployed using a CI/CD pipeline. The tools and technologies used for maintaining the pipeline and deployment are:
-
+Some Text in here
 * VCcode
 * Python/Flask
 * Flask Alchemy, SQLite
@@ -86,8 +85,7 @@ The app was deployed using a CI/CD pipeline. The tools and technologies used for
 
 ##### TESTING
 
-The app was deployed using a CI/CD pipeline. The tools and technologies used for maintaining the pipeline and deployment are:
-
+Some text in here
 * Unit Testing
 * Pytest
 ---
