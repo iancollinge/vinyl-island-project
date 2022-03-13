@@ -40,12 +40,12 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 
 -----
 
-### TECHNOLOGIES USED
+## Technologies Used
 
 ##### PROJECT MANAGEMENT
 * Agile/Sprints
 * Jira
-
+---
 ##### SOFTWARE DESIGN
 * Programming/software development
 * Version Control
