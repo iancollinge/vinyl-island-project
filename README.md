@@ -37,7 +37,7 @@ Additional features have been included in the Jira backlog. These features inclu
 
 ##### Quick Look
 
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" /><img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" width="500" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" width="500" height="" />
 
 ---
 
@@ -57,11 +57,17 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 
 ---
 
-## Technologies Used
-
 ##### PROJECT MANAGEMENT
 * Agile/Sprints
 * Jira
+
+Jira was used to plan and keep track of the app development. User stories were developed to determine the functionalities of the app. Some of the user stories developed were as follows:
+
+    As a user, I want to categorize my expenses, so that I can know where do I spend most
+    As a user, I want to add my expense item, so that I can view them later
+    As a user, I want to edit my expenses, so that I can rectify mistakes
+
+Each user story was assigned a story point estimate and then assigned to an epic. Sprints were conducted lasting 1 week each and where the story points were assigned to the sprints. The backlog of the remaining issues was cleared with each sprint session.
 
 <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" width="500" height="" />
 
@@ -81,11 +87,15 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 ---
 
 ##### PIPELINE
-* Manage VMs
-* Linux
-* Git
+* Azure VMs
+* Ubunto/Linux
+* Git and Github
 * Jenkins
 * Docker/Docker Compose
-* Docker Swarm
+* Nginx
 ---
 
+The app was deployed using a CI/CD pipeline. The tools and technologies used for maintaining the pipeline and deployment are:
+
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" />
+---
