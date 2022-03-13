@@ -1,4 +1,4 @@
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/iancollinge/vinyl-island-project/blob/main/assets/vi-temp-logo.jpg "Vinyl Island - Vinyl Collectors Paradise")
 
 # Vinyl Island Project
 Final Project For QA DevOps Bootcamp
