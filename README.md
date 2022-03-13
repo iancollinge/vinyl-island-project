@@ -37,12 +37,12 @@ Final Project For QA DevOps Bootcamp
 ## FINAL PROJECT - TECHNOLOGIES USE
 
 
-### PROJECT MANAGEMENT
+##### PROJECT MANAGEMENT
 * Agile/Sprints
 * Jira
 ---
 
-### SOFTWARE DESIGN
+##### SOFTWARE DESIGN
 * Programming/software development
 * Version Control
 * Git
@@ -52,12 +52,12 @@ Final Project For QA DevOps Bootcamp
 * MySql, SQLite
 -------------------------------
 
-### TESTING
+##### TESTING
 * Unit Testing
 * Pytest
 -------------------------------
 
-### PIPELINE
+##### PIPELINE
 * Release and Deployment
 * Manage VMs
 * Linux
