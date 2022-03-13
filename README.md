@@ -70,6 +70,8 @@ Each user story was assigned a story point estimate and then assigned to an epic
 ##### SOFTWARE DESIGN
 
 Some Text in here
+
+
 * VCcode
 * Python/Flask
 * Flask Alchemy, SQLite
@@ -79,6 +81,8 @@ Some Text in here
 ##### TESTING
 
 Some text in here
+
+
 * Unit Testing
 * Pytest
 ---
