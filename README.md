@@ -46,7 +46,7 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 * Agile/Sprints
 * Jira
 
-<https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg alt="Screen recording CRUD functionality" width="240" height="180" border="10" />
+![](https://assets/home.jpg | width=240)
 ---
 ##### SOFTWARE DESIGN
 * Programming/software development
