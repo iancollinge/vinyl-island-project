@@ -33,7 +33,7 @@ Final Project For QA DevOps Bootcamp
 https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+" target="_blank"><img src="assets/vid1.png" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
