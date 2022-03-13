@@ -97,5 +97,5 @@ Each user story was assigned a story point estimate and then assigned to an epic
 
 The app was deployed using a CI/CD pipeline. The tools and technologies used for maintaining the pipeline and deployment are:
 
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/jenkins-stage-view.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/jenkins-stage-view.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/docker-hub.png" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/docker-hub.png" width="500" height="" />
 ---
