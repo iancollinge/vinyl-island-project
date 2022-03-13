@@ -64,9 +64,9 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 
 Jira was used to plan and keep track of the app development. User stories were developed to determine the functionalities of the app. Some of the user stories developed were as follows:
 
-* As a user, I want to categorize my expenses, so that I can know where do I spend most
-* As a user, I want to add my expense item, so that I can view them later
-* As a user, I want to edit my expenses, so that I can rectify mistakes
+* As a user, I want to be able to add items from my vinyl collection to a list.
+* As a user, I want to be able to add, edit or delete items from the list.
+* As a developer, I want to create an attractive GUI for the app.
 
 Each user story was assigned a story point estimate and then assigned to an epic. Sprints were conducted lasting 1 week each and where the story points were assigned to the sprints. The backlog of the remaining issues was cleared with each sprint session.
 
