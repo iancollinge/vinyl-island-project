@@ -32,13 +32,9 @@ Final Project For QA DevOps Bootcamp
 
 <a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
 " target="_blank"><img src="assets/vid1.png" 
-alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
-
-<a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
+alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a> | <a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
 " target="_blank"><img src="assets/vid1.png" 
-alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
-
-<a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
+alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a> | <a href="https://youtu.be/kpKs8LWH-n0/watch?feature=player_embedded&v=kpKs8LWH
 " target="_blank"><img src="assets/vid1.png" 
 alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
 
