@@ -33,7 +33,6 @@ pipeline {
                      sh ". ./venv/bin/activate"
                      sh "python3 -m pytest --junitxml unittests.xml"
                      sh "python3 -m pytest --cov-report xml:coverage.xml --cov=tests/"
-                     sh "deactivate"
                      sh "rm -rf /venv"   
                    }
               }
