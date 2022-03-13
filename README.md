@@ -14,6 +14,7 @@ This project is the final submission for the QA DevOps bootcamp. The app is serv
 
 * Introduction
 * Project Overview
+* Quick Look
 * Screen Video Recordings
 * Project Management
 * Software Design
@@ -23,7 +24,7 @@ This project is the final submission for the QA DevOps bootcamp. The app is serv
 * Future Development
 
 ---
-
+#real-cool-heading
 ##### PROJECT OVERVIEW
 
 This project aims to create an intuitive application to create and manage a collection of vinyl records. It could be easily adapted for any type of collection.
@@ -34,12 +35,13 @@ This current version has the basic CRUD functionality with which the user can cr
 
 Additional features have been included in the Jira backlog. These features include login/authentication, share collections with friends, add links to sound files (mp3), a wants list that will allow the user to search existing vinyl market places for items on their wants list. A feature to allow an image to be added to each record.
 
+ #real-cool-heading
 ##### Quick Look
 
 <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/home.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/addto.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/update.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/edit-added-success.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/mobile-ui.jpg" width="500" height="" />
 
 ---
-
+#real-cool-heading
 ## Screen video recordings
 
 * Show usage of the app
@@ -56,6 +58,7 @@ alt="Screen recording CRUD functionality" width="240" height="180" border="10" /
 
 ---
 
+#real-cool-heading
 ##### PROJECT MANAGEMENT
 
 * Agile/Sprints
