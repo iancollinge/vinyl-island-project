@@ -104,7 +104,7 @@ Most stages of the CI/CD pipeline completed but not without some issues. One of 
 
 Final deployment failed with a persistent ssh issue. I have not managed to fix this yet!
 
-Overall, app works and for the most part the pipeline does do what it's supposed to.
+Overall, app works and for the most part the pipeline works though missing key stage of deploying. I'm working to understnd the problem so I can resolve and complete the process successfully.
 
 * Triggers from Git Push
 * Checks out Git Repo
