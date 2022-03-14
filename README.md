@@ -21,7 +21,6 @@ This project is the final submission for the QA DevOps bootcamp. The app is serv
 * [Testing](#testing)
 * [Pipeline](#pipeline)
 * [Outcomes](#outcomes)
-* [Future Development](#future-development)
 
 ---
 
@@ -48,6 +47,7 @@ Additional features have been included in the Jira backlog. These features inclu
 * Show Jenkins pipeline stages
 
 <a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /> </a> <a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a> <a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
+
 ---
 
 ##### PROJECT MANAGEMENT
@@ -61,16 +61,13 @@ Jira was used to plan and keep track of the app development. User stories were d
 * As a user, I want to be able to add, edit or delete items from the list.
 * As a developer, I want to create an attractive GUI for the app.
 
-Each user story was assigned a story point estimate and then assigned to an epic. Sprints were conducted lasting 1 week each and where the story points were assigned to the sprints. The backlog of the remaining issues was cleared with each sprint session.
+I created user stories to dictate tasks. Each story was given a time and added to the Epic and sprints created to complete the tasks.
 
-<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" width="500" height="" />
+<img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/via-sprint-3.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/backlog.jpg" width="500" height=""/> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/roadmap.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/story-map.jpg" width="500" height=""/>
 
 ---
 
 ##### SOFTWARE DESIGN
-
-Some Text in here
-
 
 * VCcode
 * Python/Flask
@@ -80,16 +77,13 @@ Some Text in here
 
 ##### TESTING
 
-Some text in here
-
-
 * Unit Testing
 * Pytest
 ---
 
 ##### PIPELINE
 
-The app was deployed using a CI/CD pipeline. The tools and technologies used for maintaining the pipeline and deployment are:
+The app was deployed using a CI/CD pipeline. This is a list of tools used for the CI/CD pipeline.
 
 * Azure VMs
 * Ubunto/Linux
@@ -97,7 +91,26 @@ The app was deployed using a CI/CD pipeline. The tools and technologies used for
 * Jenkins
 * Docker/Docker Compose
 * Nginx
+
 ---
 
 <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/jenkins-stage-view.jpg" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/jenkins-stage-view.jpg" width="500" height="" /> <img src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/docker-hub.png" data-canonical-src="https://github.com/iancollinge/vinyl-island-project/blob/main/assets/docker-hub.png" width="500" height="" />
+
 ---
+
+##### OUTCOMES
+
+Most stages of the CI/CD pipeline completed but not without some issues. One of the main problems I encountered was with permissions at various points of the pipeline run. Permissions on the Docker socket prevented the pipeline from mving to the next stage and braking it. Solution was to use 'sudo chmod 666 /var/run/docker.sock' which solved the issue though seems temporary!
+
+Final deployment failed with a persistent ssh issue. I have not managed to fix this yet!
+
+Overall, app works and for the most part the pipeline does do what it's supposed to.
+
+* Triggers from Git Push
+* Checks out Git Repo
+* Installs Packages
+* Runs Unit Tests
+* Completes Build
+* Pushes the Build to Docker Hub
+* Deployment FAILS
+* Post Build Actions would likely complete if Deployment succeeded.
