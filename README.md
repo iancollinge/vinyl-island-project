@@ -46,7 +46,7 @@ Additional features have been included in the Jira backlog. These features inclu
 * Show update through Git to pipeline
 * Show Jenkins pipeline stages
 
-<a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /> </a> <a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a> <a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/d8Jx0swfENg/watch?feature=player_embedded&v=d8Jx0swfENg" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording CRUD functionality" width="400" height="" border="10" /> </a> <a href="https://youtu.be/rBNQtvLtzSc/watch?feature=player_embedded&v=rBNQtvLtzSc" target="_blank"><img src="https://github.com/iancollinge/vinyl-island-project/raw/main/assets/home.jpg" alt="Screen recording Git Push to CI/CD Pipline" width="400" height="" border="10" /></a> 
 
 ---
 
