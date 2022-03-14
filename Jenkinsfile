@@ -48,20 +48,20 @@ pipeline {
             }
             stage('Push'){
                 steps{
-		withCredentials([string(credentialsId: 'c4c29728-20ac-4c4d-a67b-3f7cccc8c424', variable: 'dockerHubPWD')]) {
               // Comment Here
 		      sh 'docker login -u iancollinge -p JKbas18ja'
 		      sh 'docker-compose push'
 		}
               }
-            }
             
 	    stage('Deploy'){
               // Comment Here
                 steps{
                   // some block
+			withCredentials([string(credentialsId: 'c4c29728-20ac-4c4d-a67b-3f7cccc8c424', variable: 'SECRET_KEY')]) {
                       sh 'scp docker-compose.yaml ian@10.0.0.21'
-                      sh 'ssh ~/.ssh/id_rsa -i ian@10.0.0.21 -p 22 docker deploy --compose-file docker-compose.yaml app'
+                      sh 'ssh ian@10.0.0.21 'docker deploy --compose-file docker-compose.yaml app'
+			}
                 }
             }
 		    
