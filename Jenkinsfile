@@ -59,8 +59,8 @@ pipeline {
                 steps{
                   // some block
 			withCredentials([string(credentialsId: 'c4c29728-20ac-4c4d-a67b-3f7cccc8c424', variable: 'SECRET_KEY')]) {
-                      sh 'scp docker-compose.yaml ian@10.0.0.21'
-                      sh ssh ian@10.0.0.21 'docker deploy --compose-file docker-compose.yaml app'
+                      sh 'scp docker-compose.yaml ian@10.0.0.21:
+		      ssh ian@10.0.0.21 'docker deploy --compose-file docker-compose.yaml app'
 			}
                 }
             }
